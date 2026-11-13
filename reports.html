@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - MediCare</title>
+    <link rel="stylesheet" href="./css/reports.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h2>Reports</h2>
+            <p>Manage and view hospital reports</p>
+
+             <button class="add-btn">+ Add Reports</button>
+        
+        </header>
+
+        <!-- Report Cards -->
+        <section class="report-cards">
+
+            <div class="card">
+                <h3>Total Reports</h3>
+                <h2>250</h2>
+                <p>All hospital reports</p>
+            </div>
+
+            <div class="card">
+                <h3>Patient Reports</h3>
+                <h2>120</h2>
+                <p>Patient records</p>
+            </div>
+
+            <div class="card">
+                <h3>Appointment Reports</h3>
+                <h2>85</h2>
+                <p>Appointment details</p>
+            </div>
+
+            <div class="card">
+                <h3>Monthly Reports</h3>
+                <h2>45</h2>
+                <p>This month's reports</p>
+            </div>
+
+        </section>
+
+        <!-- Reports Table -->
+        <section class="report-section">
+
+            <div class="report-header">
+                <h3>Recent Reports</h3>
+                <input type="text" placeholder="Search reports...">
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Report Name</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Patient Report</td>
+                        <td>Patients</td>
+                        <td>10 Nov 2026</td>
+                        <td><span class="complete">Completed</span></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>Appointment Report</td>
+                        <td>Appointments</td>
+                        <td>09 Nov 2026</td>
+                        <td><span class="complete">Completed</span></td>
+                       
+                    </tr>
+
+                    <tr>
+                        <td>Doctor Report</td>
+                        <td>Doctors</td>
+                        <td>08 Nov 2026</td>
+                        <td><span class="pending">Pending</span></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>Payment Report</td>
+                        <td>Payments</td>
+                        <td>07 Nov 2026</td>
+                        <td><span class="complete">Completed</span></td>
+                        
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+    </div>
+
+</body>
+</html>

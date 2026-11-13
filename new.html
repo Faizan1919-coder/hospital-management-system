@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hospital managing dashboard </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+
+    <aside class="sidebar">
+        <div class="logo">
+            <i class="fas fa-hospital"></i>
+            <h2>MediCare</h2>
+        </div>
+
+        <p class="new">MAIN MENU</p>
+
+        <ul class="menu">
+            <li class="active">
+                <i class="fas fa-chart-pie"></i>
+                <span>Dashboard</span>
+            </li>
+            <li>
+                <i class="fas fa-user-injured"></i>
+                <a href="patient.html">
+                    <span>Patients</span></a>
+                
+           
+           <li>
+                <i class="fa-solid fa-user-doctor"></i>
+                <a href="doctor.html">
+                    <span>Doctors</span></a>
+                      </li>
+           <li>
+                <i class="fa-solid fa-book-medical"></i>
+                <a href="appointments.html">
+                    <span>Appointments</span></a>
+                      </li>
+                       
+            <li>
+                <i class="fas fa-hospital-user"></i>
+                <a href="department.html">
+                    <span>Departments</span></a>
+                      </li>
+            <li>
+                 <i class="fas fa-file-invoice"></i>
+                <a href="payments.html">
+                    <span>Payments</span></a>
+                      </li>
+                      
+             <li>
+                 <i class="fas fa-prescription"></i>
+                <a href="priscription.html">
+                    <span>Priscription</span></a>
+                      </li>
+                    
+             <li>
+                 <i class="fas fa-chart-line"></i>
+                <a href="reports.html">
+                    <span>Reports</span></a>
+                      </li>
+        </ul>
+        <h2 class="new">OTHERS</h2>
+
+        <ul class="menu">
+    <li>
+        <i class="fas fa-gear"></i>
+        <button class="btn settings-btn">Settings</button>
+    </li>
+
+    <li>
+        <i class="fas fa-right-from-bracket"></i>
+        <button class="btn logout-btn">Logout</button>
+    </li>
+</ul>
+    </aside>
+
+    <main class="admin">
+     <section class="topbar">
+        <div>
+                <h2>Dashboard Overview</h2>
+                <p>Welcome back, Admin!</p>
+            </div>
+            <div class="profile">
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search with id">
+                </div>
+                <div class="mine">
+                    <div>
+                    
+                         <img src="WhatsApp Image 2026-06-02 at 2.50.01 PM.jpeg" alt="">
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       <section class="stats">
+
+            <div class="card">
+                <div class="icon blue">
+                   <i class="fa-solid fa-user-injured"></i>
+                </div>
+                <div>
+                    <p>Total Patients</p>
+                    <h2>500</h2>
+                    <small class="positive">+12.5% This Month</small>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon green">
+                    <i class="fas fa-user-doctor"></i>
+                </div>
+                <div>
+                    <p>Total Doctors</p>
+                    <h2>100</h2>
+                    <small class="positive">+5 New Doctors</small>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon orange">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <div>
+                    <p>Appointments</p>
+                    <h2>320</h2>
+                    <small class="positive">+8.2% This Month</small>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon purple">
+                    <i class="fas fa-bed"></i>
+                </div>
+                <div>
+                    
+                    <p>Available Beds</p>
+                    <h2>800</h2>
+                    <small class="negative">Out of 200 Beds</small>
+                </div>
+            </div>
+        </section>
+        <div class="panel appointments">
+                <div class="panel-header">
+                    <div>
+                        <h3>Recent Appointments</h3>
+                        <p>Latest patient appointments</p>
+                    </div>
+                    <a href="#">View All</a>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+
+                                <th>Patient</th>
+                                <th>Doctor</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="patient">
+                                        <img src="WhatsApp Image 2026-11-04 at 4.14.50 PM (1).jpeg" alt="">
+                                   <span>kaif sheikh </span>
+                                    </div>
+                                </td>
+                                <td>Dr. Ahmed</td>
+                                <td>04 Nov 2026</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="patient">
+
+                                        <img src="WhatsApp Image 2026-11-04 at 4.19.00 PM.jpeg" alt="">
+                                        <span>hamza Khan</span>
+                                    </div>
+                                </td>
+                                <td>Dr. Ali</td>
+                                <td>04 Nov 2026</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="patient">
+                                        <img src="https://i.pravatar.cc/100?img=33" alt="">
+                                        <span>Ahmed </span>
+                                    </div>
+                                </td>
+                                <td>Dr. Usman</td>
+                                <td>05 Nov 2026</td>
+                                <td><span class="status cancelled">Cancelled</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="patient">
+                                        <img src="https://i.pravatar.cc/100?img=49" alt="">
+                                        <span>Ayesha Noor</span>
+                                    </div>
+                                </td>
+                                <td>Dr. Ahmed</td>
+                                <td>05 Nov 2026</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        <div class="chart-container">
+    <h3>Patient Statistics</h3>
+    <canvas id="patientChart"></canvas>
+</div>
+
+            <footer>
+            <p> 2026 MediCare Hospital Management System. All Rights Reserved.</p>
+        </footer>
+
+
+    </main>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+
+<script>
+const ctx = document.getElementById('patientChart');
+
+new Chart(ctx, {
+    type: 'line',
+
+    data: {
+        labels: [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June'
+        ],
+
+        datasets: [{
+            label: 'Total Patients',
+
+            data: [120, 190, 150, 250, 220, 300],
+
+            borderColor: '#3498db',
+            backgroundColor: 'rgba(52, 152, 219, 0.15)',
+
+            borderWidth: 3,
+            fill: true,
+            tension: 0.4
+        }]
+    },
+
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+
+        plugins: {
+            legend: {
+                display: true
+            }
+        },
+
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});</script>
+    </div>
+    
+</body>
+</html>
